@@ -1,0 +1,4 @@
+mmcboot=fatload mmc 0 0x43000000 script.bin || fatload mmc 0 0x43000000 evb.bin; fatload mmc 0 0x48000000 uImage; if fatload mmc 0 0x43100000 uInitrd; then bootm 0x48000000 0x43100000; else bootm 0x48000000; fi
+uenvcmd=run mmcboot
+bootargs=console=ttyS0,115200 console=tty0 disp.screen0_output_mode=EDID:1280x1024p50 \
+hdmi.audio=EDID:0 root=/dev/mmcblk0p1
