@@ -295,7 +295,7 @@ spi_cs1 = port:PA09<3><default><default><default>
 spi_dev_num = 0
 
 [spi_board0]
-modalias = "aaa"
+modalias = "spidev"
 max_speed_hz = 12000000
 bus_num = 1
 chip_select = 0
@@ -1398,13 +1398,13 @@ LV1_volt = 1500
 
 LV2_freq = 1200000000
 ;LV2_volt = 1475
-LV2_volt = 1450
+LV2_volt = 1425
 
 LV3_freq = 1008000000
-LV3_volt = 1450
+LV3_volt = 1400
 
 LV4_freq = 912000000
-LV4_volt = 1425
+LV4_volt = 1400
 
 LV5_freq = 864000000
 LV5_volt = 1350

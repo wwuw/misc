@@ -1,0 +1,26 @@
+#! /bin/sh
+./configure --with-pcre=/home/pcre \
+  --with-zlib=/home/zlib \
+  --with-openssl=/home/openssl \
+  --with-http_iconv_module \
+  --with-lua51=/home/lua \
+  --with-luajit \
+  --with-file-aio \
+  --with-ipv6 \
+  --with-http_realip_module         \
+  --with-http_addition_module       \
+  --with-http_xslt_module           \
+  --with-http_image_filter_module   \
+  --with-http_geoip_module          \
+  --with-http_sub_module            \
+  --with-http_dav_module            \
+  --with-http_flv_module            \
+  --with-http_gzip_static_module    \
+  --with-http_random_index_module   \
+  --with-http_secure_link_module    \
+  --with-http_degradation_module    \
+  --with-http_stub_status_module    \
+  --with-mail                       \
+  --with-mail_ssl_module            \
+  --with-libatomic                  \
+  --add-module=/home/nginx_module/nginx-rtmp-module-master \
